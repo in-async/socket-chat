@@ -1,0 +1,14 @@
+﻿extends ../layout
+
+block content
+    ul#messages.list-unstyled
+    form.form-inline(action="")
+        input#m.form-control(autocomplete="off")
+        button.btn.btn-default Send
+
+    script(src='/javascripts/chat-client.js')
+    script.
+      var user = {
+        name: '#{user}',
+      };
+    
